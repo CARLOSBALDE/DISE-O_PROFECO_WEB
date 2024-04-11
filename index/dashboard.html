@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Supermercado</title>
+    <style>
+        /* Estilos básicos para el dashboard */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #3e8e41;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        section {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        button, input[type="submit"] {
+            background-color: #3e8e41;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover, input[type="submit"]:hover {
+            background-color: #2d6f2e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dashboard Supermercado</h1>
+    </header>
+
+    <main>
+        <!-- Sección para obtener multas -->
+        <section>
+            <h2>Obtener Multas</h2>
+            <form id="getFinesForm">
+                <button type="button" onclick="getFines()">Obtener Multas</button>
+            </form>
+            <div id="finesResult"></div>
+        </section>
+
+        <!-- Sección para subir precios de productos -->
+        <section>
+            <h2>Subir Precio de Productos</h2>
+            <form id="updatePriceForm">
+                <label for="product">Producto:</label>
+                <input type="text" id="product" name="product" required>
+                
+                <label for="price">Nuevo Precio:</label>
+                <input type="number" id="price" name="price" required>
+                
+                <input type="submit" value="Subir Precio">
+            </form>
+        </section>
+
+        <!-- Sección para publicar ofertas de productos -->
+        <section>
+            <h2>Publicar Ofertas de Productos</h2>
+            <form id="publishOfferForm">
+                <label for="productOffer">Producto:</label>
+                <input type="text" id="productOffer" name="productOffer" required>
+                
+                <label for="offer">Oferta:</label>
+                <input type="text" id="offer" name="offer" required>
+                
+                <input type="submit" value="Publicar Oferta">
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function getFines() {
+            // Lógica para obtener multas
+            // Puedes realizar una solicitud a tu API aquí
+            document.getElementById("finesResult").innerText = "Multas obtenidas (simulación)";
+        }
+
+        document.getElementById("updatePriceForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Lógica para actualizar precios de productos
+            const product = document.getElementById("product").value;
+            const price = document.getElementById("price").value;
+            console.log(`Subir precio de ${product} a ${price}`);
+        });
+
+        document.getElementById("publishOfferForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Lógica para publicar ofertas de productos
+            const product = document.getElementById("productOffer").value;
+            const offer = document.getElementById("offer").value;
+            console.log(`Publicar oferta para ${product}: ${offer}`);
+        });
+    </script>
+</body>
+</html>

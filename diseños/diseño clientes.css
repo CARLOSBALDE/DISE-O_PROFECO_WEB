@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  "Ubuntu";
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  "Ubuntu";
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/images/compras-online2.jpg);  
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.content{
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    transform:  translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20 px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -0;
+    transition: 0.5s;
+}
+
+
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.info-product{
+
+    display: flex;
+justify-content: space-between;
+padding: 30px 0 40px 0;
+}
+
+
+.img1{
+max-width: 100%;
+}
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+}
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.item{
+
+    border-radius: 10px;
+    background-color:#fdfdfd
+}
+.item:hover{
+box-shadow: 0 10px 20px rgba(0, 0, 0,20);
+}
+
+.info-product{
+    padding: 15 px 30 px;
+    line-height: 2;
+    flex-direction: column;
+    gap: 10px;
+}
+.price{
+
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #222;
+    color: #e4e4e4;
+    padding: 15px 10px;
+    cursor: pointer;
+
+}
+.item figure{
+    overflow: hidden;
+}
+.item:hover{
+transform:  scale(1.2);
+
+}
+.item img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    border-top-left-radius: 50px;
+    transition: all 0.5s;
+}
+
+.container-title{
+    padding: 30px;
+    color: #eee;
+  margin-bottom: 30px;
+color: #222;
+}
+
+
+main{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.containerimg{
+    flex: 1;
+    background-color: #f7f7f9;
+    flex-direction: column;
+}
+
+.container-info-product{
+    flex: 1;
+}
+
+
+.containerimg img{
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    background-size: cover;
+}
+
+.container-price{
+ padding-bottom: 20px;
+ border-bottom: 1px soid #e4e4e4;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.container-price span{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.container-detais-product{
+    padding: 30px 0;
+}
+
+
+.form-group{
+    display: flex;
+    align-items: center;
+   gap: 20px;
+   margin-bottom: 15px;
+}
+
+.form-group label{
+    width: 100px;
+    font-weight: 700;
+    color: #222;
+}
+
+.form-group select {
+    width: 300px;
+    border: none;
+    padding: 12px 15px;
+    background-color: #f7f7f9;
+    outline: none;
+    color: #666;
+}
+
+
+
+.calificarproducto{
+    border: none;
+    background-color: none;
+    color: #666;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+.calificarproducto:hover{
+    color: #1bbeb4;
+}
+
+
+.reportarinconsistencia{
+    border: none;
+    background-color: none;
+    color: #666;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+.reportarinconsistencia:hover{
+    color: #1bbeb4;
+}
+
+.getofertas{
+    border: none;
+    background-color: none;
+    color: #666;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+.getofertas:hover{
+    color: #1bbeb4;
+}
+
+.container_description{
+    display: flex;
+    flex-direction:  column;
+     border-bottom: 1px solid #e4e4e4;  
+     padding: 10px 0;
+
+}
+
+
+.title_description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+font-size: 13px;
+color: #252525;
+line-height: 22px;
+margin-top: 25px;
+
+}
+
+.related-products{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card_listproducts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+
+.card_image img {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+   
+}
+
+.card_image{
+    background: transparent;
+    margin-bottom: 15px;
+}
+
+.info-card{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.card{
+    cursor: pointer;
+}
+
+.text_product{
+    color: #252525;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.text_product h3{
+    color: inherit;
+    font-weight: inherit  ;
+    font-size: 15px;
+}
+
+
+.text_product h3:hover{
+    color: #1bbeb4;
+  
+}
+
+.text_product p:hover{
+    color: #1bbeb4;
+  
+}
+
+.text_product p{
+    color: #666;
+    font-size: 13px;
+}
+
+footer{
+    padding: 30px;
+    color: #eee;
+  margin-top: 30px;
+color: #222;
+}
+
+.containter-title {
+ font-size: 30px;
+    font-weight: 200;
+}
+
+
+.windwgetofertas{
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(225,225,225  ,0.3);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+@keyframes modal{
+    from{
+        transform: translateY(50vh);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+.close{
+    transition: transform 1s cubic-bezier(0,-0.42,1,-0.41);
+    transform:  translateY(60vh);
+}
+
+
+
+
+.windowcontainer{
+    position: relative;
+    background-color: #e4e4e4;
+    width: 550px;
+    height: auto;
+    padding: 1.5 ;
+border-radius: 8px;
+animation-name: modal;
+animation-duration: .5s;
+box-shadow: 0px 5px 15px .5px rgba(0, 0, 0, -4);
+z-index: 10;
+}
+
+.icon-x{
+    fill: #252525;
+}
+
+.cerrar{
+
+    position: absolute;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     border: 1px solid #eee;
+     cursor: pointer;
+}
+
+.cerrar2{
+
+    position: absolute;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     border: 1px solid #eee;
+     cursor: pointer;
+}
+
+.cerrar3{
+
+    position: absolute;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     border: 1px solid #eee;
+     cursor: pointer;
+}
+
+
+
+
+.windwgetcalif{
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(225,225,225  ,0.3);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.windwgetinconsistencia{
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(225,225,225  ,0.3);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.container{
+
+    padding: 1rem;
+    width: 35rem;
+    background-color: #521262;
+    border-radius: .5rem;
+
+    box-shadow: 0 0 2rem rgba(0 , 0, 0, .3);
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper{
+    margin: 2rem 0;
+}
+
+.text{
+    margin-bottom: .5rem;
+    font-size: 1em;
+    color: #fdfdfd;
+ text-align: center;
+}
+
+.emoji{
+font-size: 1.3em;
+display: flex;
+justify-content: center;
+}
+
+.emoji> div:not(:first-child){
+    margin-left: 1rem;
+}
+
+.emoji>div{
+cursor: pointer;
+transition:  transform .2s ease-in;
+}
+
+.emoji>div:hover{
+    transform: scale(1.4);
+    }
+
+
+
+ .textarea{
+        width: 100%;
+        display: bock;
+background-color: rgb(59,9, 59);
+color: #eee;
+border: none;
+resize: no;
+height: 0;
+opacity: 0;
+outline: none;
+transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .textarea--active{
+        padding: 1rem;
+        opacity: 1;
+        height: 6rem;
+    }
+
+.btn{
+    text-decoration: none;
+    color: #eee;
+    padding: .4rem;
+    background-color: purple;
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+
+}
+
+.btn--active{
+    display: inline-block;
+}

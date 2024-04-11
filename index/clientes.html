@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profeco ONLINE</title>
+  <link rel="stylesheet" href="/diseños/diseño clientes.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  var seleccionado = 1;
+  var seleccionado2 = 1;
+
+  <div class="banner">
+
+    <div class="navbar">
+
+      <img src="/images/logo-profeco.png" alt="" class="logo">
+
+      <ul>
+
+
+        <li> <a href="/index/index.html">HOME</a></li>
+        <li> <a href="/index/clientes.html">CLIENTES</a></li>
+        <li> <a href="/index/mercado.html">MERCADOS</a></li>
+        <li> <a href="/index/profeco.html">PROFECO</a></li>
+      </ul>
+    </div>
+
+
+    <div class="content">
+
+      <h1><i class="fa-solid fa-arrow-down"></i></h1>
+      <p>Deslize hacia abajo para visualiza productos</p>
+    </div>
+  </div>
+
+
+  <script src="/JS/index.js"></script>
+  <header>
+    <h1>Productos</h1>
+  </header>
+
+  <div class="containter-title">Leche 1lt</div>
+  <div class="containter-title2">Lacteos</div>
+  <main>
+    <div class="containerimg" id="containerimg">
+
+      <img src="/images/leche.png" alt="">
+
+    </div>
+
+    <div class="container-infoproducto">
+
+      <div class="container-price"><span>$95.00<i class="fa-solid fa-money-bill-wave"></i></span><i
+          class="fa-solid fa-arrow-right fa-beat-fade"></i>
+
+      </div>
+
+      <div class="container-details-product">
+        <div class="form-group">
+
+          <label for="Piezas">Piezas</label>
+          <select name="Colour" id="">
+
+            <option disabled selected value="">Escoje una opcion</option>
+            <option value="1 Pieza">1 Pieza</option>
+            <option value="5 Piezas">5 Piezas</option>
+
+            <option value="10 Piezas">10 Piezas</option>
+
+
+          </select>
+        </div>
+        <div class="windwgetcalif" id="windwgetcalif">
+
+          <div class="windowcontainer" id="windowcontainer">
+
+           
+
+            <div class="container">
+              <div class="wrapper">
+                <p class="text">Que opinas acerca del producto</p>
+
+                <div class="emoji">
+                  <div>😡</div>
+                  <div>🙄</div>
+                  <div>🙂</div>
+                  <div>😁</div>
+                  <div>🤩</div>
+                </div>
+              </div>
+               <textarea class="textarea" name="textarea" id="" cols="30" rows="10" placeholder="Escribe tu opinion">
+               </textarea>
+               <a href="#" class="btn">Enviar</a>
+            </div>
+            <button class="cerrar" id="cerrar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z">
+                </path>
+              </svg>
+
+            </button>
+          </div>
+        </div>
+        <button class="calificarproducto" id="calificarproducto">CALIFICAR</button>
+        <div class="windwgetinconsistencia" id="windwgetinconsistencia">
+
+          <div class="windowcontainer" id="windowcontainer">
+
+           
+
+           <div class="container">
+            <div class="wrapper">
+              <p class="text">Escribenos que esta pasando..</p>
+
+              <div class="emoji">
+                <div>REPORTAR INCONSISTENCIA</div>
+              </div>
+            </div>
+             <textarea class="textarea" name="textarea" id="" cols="30" rows="10" placeholder="Escribe tu opinion">
+             </textarea>
+             <a href="#" class="btn">Enviar</a>
+          </div>
+          <button class="cerrar2" id="cerrar2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z">
+              </path>
+            </svg>
+
+          </button>
+          </div>
+        </div>
+        <button class="reportarinconsistencia" id="reportarinconsistencia">REPORTAR INCONSISTENCIA</button>
+        <div class="windwgetofertas" id="windwgetofertas">
+
+          <div class="windowcontainer" id="windowcontainer">
+
+            <button class="cerrar3" id="cerrar3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon-x">
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z">
+                </path>
+              </svg>
+
+            </button>
+
+                      <div class="container-items">
+                        <div class="item">
+                          <figure>
+
+                            <img src="/images/leche.png" alt="" class="img1">
+                          </figure>
+
+
+                          <div class="info-product">
+                            <h2>Leche 1lt</h2>
+                            <p class="price">27.58</p>
+                             <button>Comprar</button>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <figure>
+
+                            <img src="/images/leche.png" alt="" class="img1">
+                          </figure>
+
+
+                          <div class="info-product">
+                            <h2>Leche 1lt</h2>
+                            <p class="price">60.52</p>
+                             <button>Comprar</button>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <figure>
+
+                            <img src="/images/leche.png" alt="" class="img1">
+                          </figure>
+
+
+                          <div class="info-product">
+                            <h2>Leche 1lt</h2>
+                            <p class="price">41.65</p>
+                             <button>Comprar</button>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <figure>
+
+                            <img src="/images/leche.png" alt="" class="img1">
+                          </figure>
+
+
+                          <div class="info-product">
+                            <h2>Leche 1lt</h2>
+                            <p class="price">77.90</p>
+                             <button>Comprar</button>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <figure>
+
+                            <img src="/images/leche.png" alt="" class="img1">
+                          </figure>
+
+
+                          <div class="info-product">
+                            <h2>Leche 1lt</h2>
+                            <p class="price">20.00</p>
+                             <button>Comprar</button>
+                          </div>
+                        </div>
+                      </div>
+
+          </div>
+        </div>
+        <button class="getofertas" id="getofertas">VER OFERTAS</button>
+
+
+        <div class="container_description">
+          <div class="titledescription">
+
+            <h4>Descripcion</h4>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="text-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam blanditiis,
+            aperiam doloribus porro qui ipsum tempora, praesentium ex dignissimos, velit quae non adipisci voluptas!
+            Quos odio fugiat consequuntur ea excepturi.</div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <section class="related-products">
+
+    <h2>Productos relacionados</h2>
+
+    <div class="card_listproducts">
+      <div class="card" id="card1">
+
+        <div class="card_image">
+          <img src="/images/mazatun.png" alt="">
+        </div>
+        <div class="infocard">
+
+          <div class="textproduct">
+            <h3>Mazatun</h3>
+            <p class="category">Alimenos enlatados</p>
+          </div>
+
+          <div class="precio">$85.00</div>
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="card_image" id="card2">
+          <img src="/images/san vicente.png" alt="">
+        </div>
+        <div class="infocard">
+
+          <div class="textproduct">
+            <h3>Harina san vicente</h3>
+            <p class="category">Productos de harina</p>
+          </div>
+
+          <div class="precio">$150.00</div>
+        </div>
+      </div>
+      <div class="card" id="card3">
+
+        <div class="card_image">
+          <img src="/images/cereal.png" alt="">
+        </div>
+        <div class="infocard">
+
+          <div class="textproduct">
+            <h3>Ceral kellogs</h3>
+            <p class="category">Cereales </p>
+          </div>
+
+          <div class="precio">$45.00</div>
+        </div>
+      </div>
+      <div class="card" id="card4">
+
+        <div class="card_image">
+          <img src="/images/frijol.png" alt="">
+        </div>
+        <div class="infocard">
+
+          <div class="textproduct">
+            <h3>Frijol Bueno 500g</h3>
+            <p class="category">Leguminosas</p>
+          </div>
+
+          <div class="precio">$95.00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <p>footer</p>
+  </footer>
+
+
+
+
+
+
+
+  <script src="/JS/funciones_clientes.js"></script>
+
+
+
+</body>
+
+</html>
